@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Modelo de Grid</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      padding: 20px 40px 30px 20px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "item1 item2"
+        "item1 item3";
+      grid-gap: 15px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 1px solid #000;
+      color: #ff0000;
+    }
+
+    .item:nth-child(1) {
+      grid-area: item1;
+
+      background-color: #0000ff;
+    }
+
+    .item:nth-child(2) {
+      grid-area: item2;
+
+      background: linear-gradient(to right, aqua, blueviolet);
+    }
+
+    .item:nth-child(3) {
+      grid-area: item3;
+      
+      position: relative;
+    }
+
+    .item:nth-child(3) p {
+      position: absolute;
+      z-index: 10;
+
+      margin: 0;
+    }
+
+    .item:nth-child(3) img {
+      position: absolute;
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item">
+      <p>Item 3</p> <img src="./assets/robert-bye-jeF-vyxytb4-unsplash.jpg" alt="img_teste">
+    </div>
+  </div>
+</body>
+
+</html>
