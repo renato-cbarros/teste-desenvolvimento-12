@@ -1,6 +1,6 @@
 # Teste de desenvolvimento Ex. 12
 
-*O wireframe foi desenvolvido em html e css
+*O layout foi desenvolvido em html e css
 -- Para acessar bastar abrir o "index.html" em algum navegador
 
 # Proposta:
