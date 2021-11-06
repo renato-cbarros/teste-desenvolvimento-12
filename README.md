@@ -1,7 +1,10 @@
 # Teste de desenvolvimento Ex. 12
 
 *O layout foi desenvolvido em html e css
--- Para acessar bastar abrir o "index.html" em algum navegador
+
+### Para executar o projeto:
+
+1. Abra o arquivo "index.html" em algum navegador
 
 # Proposta:
 Utilizando as propriedades de grid do CSS3, cumpra os requisitos e implemente uma interface web a partir do seguinte modelo: 
